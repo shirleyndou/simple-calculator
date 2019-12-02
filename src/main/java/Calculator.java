@@ -19,13 +19,11 @@ public class Calculator {
     }
 
     public int multipleModified(int...b) {
-        int product = 0;
-        int size = b.length -1;
-        int update =b[size];
-        for (int i = 0; i < b.length-1; ++i){
-            product = update*b[size-1];
-            update = product;
-            size--;
+
+        int product =1;
+        for(int i=0; i<b.length; i++)
+        {
+            product *= b[i];
         }
 
         return product ;
